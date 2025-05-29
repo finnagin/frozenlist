@@ -137,6 +137,7 @@ jobs:
         os:
         - ubuntu
         - windows
+        - windows-11-arm
         - macos
         tag:
         - ''
@@ -145,6 +146,8 @@ jobs:
         - os: windows
           tag: 'musllinux'
         - os: macos
+          tag: 'musllinux'
+        - os: windows-11-arm
           tag: 'musllinux'
         - os: ubuntu
           tag: >-
