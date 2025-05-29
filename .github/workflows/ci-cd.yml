@@ -167,7 +167,6 @@ jobs:
         *-macosx_universal2
         *-musllinux_*
         *-win32
-        *_arm64
         pp*'
         || (matrix.tag == 'musllinux') && '*-manylinux_* pp*'
         || '*-musllinux_* pp*'
