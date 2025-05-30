@@ -228,10 +228,7 @@ jobs:
           experimental: false
           os: ubuntu-latest
       fail-fast: false
-    runs-on: ${{
-        matrix.os == 'windows-11-arm' && matrix.os ||
-        format('{0}-latest', matrix.os)
-      }}
+    runs-on: ${{ matrix.os }}
     timeout-minutes: 15
     continue-on-error: ${{ matrix.experimental }}
     steps:
